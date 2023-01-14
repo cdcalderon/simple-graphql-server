@@ -2,6 +2,10 @@ import { ApolloServer, gql } from "apollo-server"
 
 // gql is a tag function so we can used it to tag a template literal
 const typeDefs = gql`
+    schema {
+        query: Query
+    }
+
     type Query {
         greeting: String
     }
